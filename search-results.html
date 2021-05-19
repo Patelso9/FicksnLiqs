@@ -12,17 +12,20 @@
 </head>
 
 <body>
-    <div class= "container">
 
-        <h3>FlicksnLiqs</h3>
-        <input id="movie">
-        <button id="rand-movie">CLick to generate new movie</button>
-        <hr>
-        <div id="results">
-
-        </div>
+<div class="movie-search">
+    <input id="movie">
+    <button id="rand-movie">Find movie</button>
+    <hr>
+    
+    <div class="card" style="width: 18rem;">
         <img id="movie-img" src= "">
+        <h2 id="title"></h2>
+        <p id="genre"></p>
+        <p id="plot"></p>
+        <p id="ratings"></p>
     </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
