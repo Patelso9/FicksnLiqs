@@ -7,18 +7,68 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/selector-page.css">
 <link rel="stylesheet" href="assets/css/search-result.css">
 <title>Title</title>
 </head>
 
 <body>
 
+<!-- Jumbotron -->
 
+    <div id="Jumbotron">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Flicks & Liqs</h1>
+              <p class="lead">Tired from a long day of coding? Choose a movie and generate a random cockail to ease your mind.</p>
+              <p>Enjoy!</p>
+            </div>
+          </div>
+    </div>
+
+<!-- Content -->
+    <div class="container">
+        <div class="row">
+
+        <!-- Movie Search -->
+          <div class="col">
+            <div class="movie-search">
+                <input id="movie">
+                <button id="rand-movie">Find movie</button>
+                <hr>
+                
+                <div class="card" style="width: 18rem;">
+                    <img id="movie-img" src= "">
+                    <h2 id="title"></h2>
+                    <p id="genre"></p>
+                    <p id="plot"></p>
+                    <p id="ratings"></p>
+                </div>
+            </div>
+          </div>
+
+        <!-- Cocktail Randomizer -->
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Cocktail</h5>
+                    <p class="card-text">Click to see your random beverage</p>
+                    <button type="button" class="btn btn-primary btn-sm" id="cocktail-button">Random Drink</button>
+                    <h1>Make This!</h1>
+                    <section id="drink-area"></section>
+                        
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 <script src ="./assets/js/script.js"></script></script>
+<script src ="./assets/js/search-result.js"></script></script><script src="./assets/js/selector-page.js"></script>
 
 </body>
 </html>
