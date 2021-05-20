@@ -1,21 +1,17 @@
+// Movie array
+// var randomMovieArray = ['Star Wars', 'Game of Thrones', 'Harry Potter']
 
-// find movie input
-var searchMovieEl = document.getElementById('movie');
+// randomize movie
 
-// find results
-var movieTitleEl = document.getElementById('title');
-var movieGenreEl = document.getElementById('genre');
-var moviePlotEl = document.getElementById('plot');
-var movieRatingEl = document.getElementById('ratings')
-
-function apiMovie() {
+function randmovieAPI() {
     
-    // variable for movie search
-    var userSearch= searchMovieEl.value;
-    console.log(userSearch);
+    // randomize movie
+    var randomNumber = Math.floor((Math.random() * randomMovieArray.length +1) -1);
+    var randomMovie = randomMovieArray[randomNumber];
+    console.log(randomMovie)
     
     // fetch API
-    $.getJSON('http://www.omdbapi.com/?t=' + userSearch + '&apikey=7a94102a')
+    $.getJSON('http://www.omdbapi.com/?t=' + randomMovie + '&apikey=7a94102a')
     .then(function(response){
         console.log(response);
 
@@ -61,4 +57,4 @@ function apiMovie() {
     
 }
 
-document.getElementById('search-movie').addEventListener('click', apiMovie);
+document.getElementById('rand-movie').addEventListener('click', randmovieAPI);
