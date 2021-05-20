@@ -32,14 +32,16 @@
 
         <!-- Movie Search -->
           <div class="col">
+            <h2 class="card-title">Movie</h2>
             <div class="movie-search">
-                <input id="movie">
-                <button id="rand-movie">Find movie</button>
+              <input id="movie">
+              <button id="search-movie" class="btn btn-primary btn-sm">Find movie</button>
+              <button id="rand-movie" class="btn btn-primary btn-sm">Random movie</button>
                 <hr>
                 
-                <div class="card" style="width: 18rem;">
-                    <img id="movie-img" src= "">
+                <div class="card">
                     <h2 id="title"></h2>
+                    <img id="movie-img" src= "">
                     <p id="genre"></p>
                     <p id="plot"></p>
                     <p id="ratings"></p>
@@ -49,14 +51,15 @@
 
         <!-- Cocktail Randomizer -->
           <div class="col">
-            <div class="card" style="width: 18rem;">
+            <h2 class="card-title">Cocktail</h2>
+            <button type="button" class="btn btn-primary btn-sm" id="cocktail-button">Bottoms Up</button>
+            <hr>
+            <div class="card" >
                 <div class="card-body">
-                    <h5 class="card-title">Cocktail</h5>
-                    <p class="card-text">Click to see your random beverage</p>
-                    <button type="button" class="btn btn-primary btn-sm" id="cocktail-button">Random Drink</button>
-                    <h1>Make This!</h1>
-                    <section id="drink-area"></section>
-                        
+                      <h2 id="name"></h2>
+                      <img id="drink-img" src= "">
+                      <p id="ingredient"></p>
+                      <p id="direction"></p>  
                 </div>
             </div>
 
@@ -67,8 +70,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-<script src ="./assets/js/script.js"></script></script>
+<script src ="./assets/js/movie-list.js"></script></script>
 <script src ="./assets/js/search-result.js"></script></script><script src="./assets/js/selector-page.js"></script>
+<script src ="./assets/js/random-movie.js"></script></script>
+<script src ="./assets/js/random-drink.js"></script></script>
+<script src ="./assets/js/script.js"></script></script>
 
 </body>
 </html>
