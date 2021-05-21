@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="assets/css/selector-page.css">
-<link rel="stylesheet" href="assets/css/search-result.css">
-<title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+  <!-- Font links -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/selector-page.css">
+  <link rel="stylesheet" href="assets/css/search-result.css">
+
+  <title>Flicks&Liqs</title>
+
 </head>
 
 <body>
@@ -20,8 +37,11 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4">Flicks & Liqs</h1>
-              <p class="lead">Tired from a long day of coding? Choose a movie and generate a random cockail to ease your mind.</p>
-              <p>Enjoy!</p>
+              <br>
+              <p class="lead">Tired from a long day of coding? 
+                <br> find a movie and cocktail to kick back & relax with
+              </p>
+
             </div>
           </div>
     </div>
@@ -32,32 +52,38 @@
 
         <!-- Movie Search -->
           <div class="col">
-            <h2 class="card-title">Movie</h2>
+            <h2 class="card-title">
+              <button id="rand-movie" class="btn btn-outline-danger">Flicks</button>
+            </h2>
             <div class="movie-search">
               <input id="movie">
-              <button id="search-movie" class="btn btn-primary btn-sm">Find movie</button>
-              <button id="rand-movie" class="btn btn-primary btn-sm">Random movie</button>
+              <button id="search-movie" class="btn btn-danger btn-sm">Search</button>
                 <hr>
-                
                 <div class="card">
+                  <div class="card-body">
                     <h2 id="title"></h2>
                     <img id="movie-img" src= "">
+                    <hr>
                     <p id="genre"></p>
                     <p id="plot"></p>
                     <p id="ratings"></p>
+                  </div>
                 </div>
             </div>
           </div>
 
         <!-- Cocktail Randomizer -->
           <div class="col">
-            <h2 class="card-title">Cocktail</h2>
-            <button type="button" class="btn btn-primary btn-sm" id="cocktail-button">Bottoms Up</button>
+            <h2 class="card-title">
+              <button type="button" class="btn btn-outline-danger" id="cocktail-button">Liqs</button>
+            </h2>
+            <br>
             <hr>
             <div class="card" >
                 <div class="card-body">
                       <h2 id="name"></h2>
                       <img id="drink-img" src= "">
+                      <hr>
                       <p id="ingredient"></p>
                       <p id="direction"></p>  
                 </div>
