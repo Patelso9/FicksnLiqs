@@ -8,7 +8,7 @@ function randmovieAPI() {
              // console.log(randomMovie)
     
     // fetch API
-    $.getJSON('http://www.omdbapi.com/?t=' + randomMovie + '&apikey=7a94102a')
+    $.getJSON('https://www.omdbapi.com/?t=' + randomMovie + '&apikey=7a94102a')
     .then(function(response){
                 // console.log(response);
 

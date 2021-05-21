@@ -15,7 +15,7 @@ function apiMovie() {
     console.log(userSearch);
     
     // fetch API
-    $.getJSON('http://www.omdbapi.com/?t=' + userSearch + '&apikey=7a94102a')
+    $.getJSON('https://www.omdbapi.com/?t=' + userSearch + '&apikey=7a94102a')
     .then(function(response){
         console.log(response);
 
