@@ -50,6 +50,7 @@ h2{
     font-family: var(--titletxt);
     color: var(--navback);
     font-size: 150%;
+    margin-top: 5px;
 }
 
 #search-movie{
