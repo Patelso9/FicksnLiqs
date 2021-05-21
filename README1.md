@@ -39,7 +39,7 @@ HTML, CSS, Java Script, Bootstrap
 
 ## Images
 
-![](./assets/images/flickscroll.gif)
+
 
 ## Project Requirements
 
