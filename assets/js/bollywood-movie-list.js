@@ -46,7 +46,7 @@ var randomMovieArray = [
     "Sanju",
     "Race 3",
     "Lipstick Under My Burkha",
-    " Newton",
+    "Newton",
     "Secret Superstar",
     "Simran",
     "Anaarkali of Aarah",
